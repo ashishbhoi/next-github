@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
 // const nextConfig = {
 //   reactStrictMode: true
@@ -7,5 +7,10 @@ const isProd = process.env.NODE_ENV === "production";
 // module.exports = nextConfig
 
 module.exports = {
-  assetPrefix: isProd ? "/next-github/" : ""
+  assetPrefix: isProd ? "/next-github/" : "",
+  images: {
+    loader: 'cloudinary',
+    domains: ['ashishbhoi.github.io'],
+    path : 'https://ashishbhoi.mo.cloudinary.net/'
+  }
 }
