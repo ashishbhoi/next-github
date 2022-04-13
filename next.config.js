@@ -10,7 +10,6 @@ module.exports = {
   assetPrefix: isProd ? "/next-github/" : "",
   images: {
     loader: 'cloudinary',
-    domains: ['ashishbhoi.github.io'],
-    path : 'https://ashishbhoi.mo.cloudinary.net/'
+    path: 'https://ashishbhoi.mo.cloudinary.net/'
   }
 }
